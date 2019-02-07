@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no_js">
+	<head>
+		<title>Panele zawartości i nowe elementy HTML5</title>
+		<meta name="author" content="PP" />
+		<meta charset="UTF-8" />
+		
+		<link href=".\js_panele_zawartosci.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Panele zawartości i nowe elementy HTML5</h1>
+			
+			<h3>Nowe elementy do obsługi m.in. paneli</h3>
+			<summary>Summary</summary>
+			<details>Details</details><br>
+			
+			<!-- Accoordion -->
+			<fieldset>
+				<legend><h3>Panel Accordion</h3></legend>
+				<ul class="accordion accordion_one">
+					<li>
+						<button class="accordion-control">Muzyka</button>
+						<div class="accordion-panel">Miejsce na zawartość panelu 1..........................................</div>
+					</li>
+					<li>
+						<button class="accordion-control">Filmy</button>
+						<div class="accordion-panel">Miejsce na zawartość panelu 2..........................................</div>
+					</li>
+					<li>
+						<button class="accordion-control">Książki</button>
+						<div class="accordion-panel">Miejsce na zawartość panelu 3..........................................</div>
+					</li>
+				</ul>
+			</fieldset><br>
+			
+			<!-- Cart Panel -->
+			<fieldset>
+				<legend><h3>Panel kart</h3></legend>
+				<div class="tab-list-div">
+					<ul class="tab-list">
+						<li class="active"><a class="tab-control" href="tab-1">Muzyka</a></li>
+						<li><a class="tab-control" href="tab-2">Filmy</a></li>
+						<li><a class="tab-control" href="tab-3">Książki</a></li>
+					</ul>
+					<div class="tab-panel active" id="tab-1">Miejsce na zawartość panelu 1..........................................</div>
+					<div class="tab-panel" id="tab-2">Miejsce na zawartość panelu 2..........................................</div>
+					<div class="tab-panel" id="tab-3">Miejsce na zawartość panelu 3..........................................</div>
+				</div>
+			</fieldset><br>
+			
+			<!--***************************************************** Przeglądarka zdjęć *************************************** -->
+			
+			<fieldset>
+				<legend><h3>Przeglądarka zdjęć + asynchroniczne wczytywanie zawartości do cache</h3></legend>
+				<div id="photo_viewer" class="">
+				</div>
+				<div id="thumbnails">
+					<a href="..\images\1.jpg" class="thumb" title="first wallpaper">
+						<img src="..\images\1.jpg" alt="first wallpaper" /></a>
+					<a href="..\images\2.jpg" class="thumb" title="second wallpaper">
+						<img src="..\images\2.jpg" alt="second wallpaper" /></a>
+					<a href="..\images\planet.jpg" class="thumb" title="fourth wallpaper">
+						<img src="..\images\planet.jpg" alt="fourth wallpaper" /></a>
+					<a href="..\images\bas1.jpg" class="thumb" title="fifth wallpaper">
+						<img src="..\images\bas1.jpg" alt="fifth wallpaper" /></a>
+					<a href="..\images\bas2.jpg" class="thumb" title="sixth wallpaper">
+						<img src="..\images\bas2.jpg" alt="sixth wallpaper" /></a>
+					<a href="..\images\bas3.jpg" class="thumb" title="seventh wallpaper">
+						<img src="..\images\bas3.jpg" alt="seventh wallpaper" /></a>
+				</div>
+			</fieldset>
+		
+			<!--***************************************************** Przeglądarka zdjęć *************************************** -->
+			
+			<fieldset>
+				<legend><h3>SLAJDY</h3></legend>
+				<div class="slide_viewer">
+					<div class="slide_group">
+						<div class="slide slide_1"><img src="..\images\1.jpg" alt="first wallpaper" /></div>
+						<div class="slide slide_2"><img src="..\images\2.jpg" alt="second wallpaper" /></div>
+						<div class="slide slide_5"><img src="..\images\bas1.jpg" alt="fifth wallpaper" /></div>
+						<div class="slide slide_6"><img src="..\images\bas2.jpg" alt="sixth wallpaper" /></div>
+						<div class="slide slide_7"><img src="..\images\bas3.jpg" alt="seventh wallpaper" /></div>
+					</div>
+				</div>
+				<div class="slide_buttons"></div>
+			</fieldset>
+			
+			
+			<fieldset>
+				<legend><h3>Panel Accordion - stworzony wtyczką</h3></legend>
+				<ul class="accordion accordion_two">
+					<li>
+						<button class="accordion-control">Muzyka</button>
+						<div class="accordion-panel">Miejsce na zawartość panelu 1..........................................</div>
+					</li>
+					<li>
+						<button class="accordion-control">Filmy</button>
+						<div class="accordion-panel">Miejsce na zawartość panelu 2..........................................</div>
+					</li>
+					<li>
+						<button class="accordion-control">Książki</button>
+						<div class="accordion-panel">Miejsce na zawartość panelu 3..........................................</div>
+					</li>
+				</ul>
+			</fieldset><br>
+		</div>
+		
+		<script src="..\JavaScript_libraries\jquery-1.11.2.min.js"></script>
+		<script src="..\js\script_panele_zawartosci.js"></script>
+	</body>
+</html>
